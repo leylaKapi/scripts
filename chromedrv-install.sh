@@ -23,7 +23,7 @@ set -e
 DRV_VER=${1:-'2.46'}
 #DRV_ARCHIVE=
 
-wget https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/$DRV_VER/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/local/bin/
 sudo chown semaphore:semaphore /usr/local/bin/chromedriver
