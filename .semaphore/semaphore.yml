@@ -5,7 +5,7 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: 'Block #1'
+  - name: 'Block'
     task:
       secrets:
         - name: 'Test secret'
@@ -15,4 +15,5 @@ blocks:
             - ls -la
             - checkout
             - ls -la
+          
             
